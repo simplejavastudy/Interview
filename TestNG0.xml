@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <!--    <groups>-->
+    <!--        <run>-->
+    <!--            <include name="sanity" />-->
+    <!--            <include name="general" />-->
+    <!--        </run>-->
+    <!--    </groups>-->
+
+
+
+    <test name="Parameterizing test 1">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="url" value="https://www.google.com"/>
+        <classes>
+            <!--            <class name="S5_Asserts"/>-->
+            <!--            <class name="TestNG_2_ParallelTesting1"/>-->
+            <!--            <class name="TestNG_3_ParallerTesting2"/>-->
+            <class name="TestNG_4_Parameterization"/>
+        </classes>
+    </test>
+
+
+
+    <test name="Parameterizing test 2">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="url" value="https://www.google.com"/>
+        <classes>
+            <!--            <class name="S5_Asserts"/>-->
+            <!--            <class name="TestNG_2_ParallelTesting1"/>-->
+            <!--            <class name="TestNG_3_ParallerTesting2"/>-->
+            <class name="TestNG_4_Parameterization"/>
+        </classes>
+    </test>
+
+</suite>

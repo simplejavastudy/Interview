@@ -8,11 +8,11 @@ public class S2_Alerts {
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "D:\\Java\\Downloads\\Selenium Jars and Drivers\\Drivers\\ChromeDriver\\chromedriver.exe");
 
-//        ChromeOptions options = new ChromeOptions();
-//        options.addArguments("headless");
-//        WebDriver driver = new ChromeDriver(options);
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("incognito");
+        WebDriver driver = new ChromeDriver(options);
 
-        WebDriver driver = new ChromeDriver();
+//        WebDriver driver = new ChromeDriver();
 
         driver.get("https://www.rahulshettyacademy.com/AutomationPractice/");
         driver.manage().window().maximize();
